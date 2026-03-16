@@ -1,0 +1,38 @@
+:root {
+  --bg: #0b1020;
+  --card: #111833;
+  --text: #e9edff;
+  --muted: #aab4df;
+  --accent: #7c9cff;
+  --border: #27315d;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background: radial-gradient(1200px 700px at 80% -10%, #1c2758 0%, var(--bg) 45%);
+  color: var(--text);
+  line-height: 1.6;
+}
+.container { width: min(980px, 92%); margin: 0 auto; }
+.topbar { position: sticky; top: 0; backdrop-filter: blur(6px); background: rgba(11,16,32,.75); border-bottom: 1px solid var(--border); }
+.nav { display: flex; justify-content: space-between; align-items: center; padding: .9rem 0; }
+.brand { color: var(--text); text-decoration: none; font-weight: 700; }
+.nav nav a { color: var(--muted); text-decoration: none; margin-left: 1rem; }
+.hero { padding: 5rem 0 3.5rem; }
+.kicker { color: var(--accent); font-weight: 700; letter-spacing: .04em; text-transform: uppercase; font-size: .8rem; }
+h1 { font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.12; margin: .6rem 0 1rem; max-width: 16ch; }
+.lead { color: var(--muted); max-width: 60ch; }
+.actions { margin-top: 1.3rem; display: flex; gap: .8rem; }
+.btn { border: 1px solid var(--border); padding: .62rem 1rem; border-radius: 10px; color: var(--text); text-decoration: none; }
+.btn.primary { background: var(--accent); color: #0a1130; border: none; font-weight: 700; }
+.section { padding: 1.5rem 0 2.4rem; }
+h2 { font-size: 1.4rem; margin-bottom: .8rem; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 1rem; }
+.card { background: linear-gradient(180deg, rgba(124,156,255,.08), rgba(124,156,255,.02)); border: 1px solid var(--border); border-radius: 14px; padding: 1rem; }
+.card h3 { margin-top: .2rem; }
+.card p, .card li { color: var(--muted); }
+.chips { display: flex; flex-wrap: wrap; gap: .55rem; }
+.chips span { border: 1px solid var(--border); border-radius: 999px; padding: .34rem .72rem; color: var(--muted); font-size: .92rem; }
+a { color: #b8c7ff; }
+.footer { border-top: 1px solid var(--border); padding: 1.2rem 0 1.7rem; color: var(--muted); margin-top: 1.4rem; }
